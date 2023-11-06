@@ -41,12 +41,12 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
     let image_url = req.query.image_url;
 
     if (!image_url) {
-      return res.send('Image url is required');
+      res.status(400).send('Image url is required');
     }
 
     const filtered_image_url = await filterImageFromURL(image_url);
 
-    res.sendFile(filtered_image_url , () =>
+    res.status(200).sendFile(filtered_image_url , () =>
         deleteLocalFiles([filtered_image_url])
     );
   });
