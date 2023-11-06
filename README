@@ -1,1 +1,5 @@
 README
+
+POSTMAN-TEST
+
+http://image-filter-starter-code-dev22222.us-east-1.elasticbeanstalk.com/filteredimages?image_url=https://upload.wikimedia.org/wikipedia/en/a/a4/Roronoa_Zoro.jpg
